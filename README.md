@@ -36,3 +36,33 @@
 ---
 
 ## 📁 Project Structure (Planned)
+
+/client
+/components
+/pages
+/styles
+/utils
+/server
+/routes
+/controllers
+/models
+/middlewares
+
+## 🖼️ Screenshots
+
+### 🔐 Login Page
+
+![Login Page](./login.png)
+
+- Simple and clean user login interface
+- Real-time validation using Formik + Yup
+- Password visibility toggle
+- Error/success messages via toast notifications
+
+### 📝 Register Page
+
+![Register Page](./register.png)
+
+- Intuitive registration form with first name, last name, email, and password fields
+- Form-level and field-level validation
+- Responsive and mobile-friendly design
