@@ -52,7 +52,7 @@
 
 ### 🔐 Login Page
 
-![Login Page](./login.png)
+![Login Page](/login.png)
 
 - Simple and clean user login interface
 - Real-time validation using Formik + Yup
@@ -61,7 +61,7 @@
 
 ### 📝 Register Page
 
-![Register Page](./register.png)
+![Register Page](/register.png)
 
 - Intuitive registration form with first name, last name, email, and password fields
 - Form-level and field-level validation
