@@ -1,27 +1,16 @@
-// import express from "express";
-// import connect from "./db/connect.js";
-// const app = express();
-// const port = 8000;
-// connect();
-// app.get("/", (req, res) => {
-//   res.send("Hello World!");
-// });
-
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}`);
-// });
-
-// const express = require("express");
 import express from "express";
 import connect from "./db/connect.js";
+import userRouter from "./routes/user.js";
+import cors from "cors";
+import productRouter from "./routes/products.js";
 
 const app = express();
-const port = 8000;
+const port = 8080;
 connect();
-
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+app.use(cors());
+app.use(express.json());
+app.use(userRouter);
+app.use(productRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

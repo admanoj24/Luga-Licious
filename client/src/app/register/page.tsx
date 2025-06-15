@@ -18,6 +18,7 @@ import { Eye, EyeOff, Mail, User, Lock } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import axios from "axios";
 
 const validationSchema = Yup.object({
   firstName: Yup.string()
@@ -67,6 +68,7 @@ export default function RegisterForm() {
     try {
       // Simulate API call
       console.log("Registration data:", values);
+      axios.post("http://localhost:8080/register", values);
       await new Promise((resolve) => setTimeout(resolve, 1000));
       alert("Registration successful!");
     } catch (error) {
