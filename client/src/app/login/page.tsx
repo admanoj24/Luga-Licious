@@ -57,7 +57,13 @@ export default function LoginForm() {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 to-purple-50 flex items-center justify-center p-4">
       <Card className="w-full max-w-md shadow-xl">
         <CardHeader className="space-y-4 text-center">
-          <Image src="/luga.webp" height={200} width={200} alt="logo" className="ml-25"/>
+          <Image
+            src="/luga.webp"
+            height={200}
+            width={200}
+            alt="logo"
+            className="ml-25"
+          />
           <div>
             <CardTitle className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
               Welcome Back to Luga-licious

@@ -35,34 +35,27 @@
 
 ---
 
-## 📁 Project Structure (Planned)
+## 💻 Getting Started
 
-/client
-/components
-/pages
-/styles
-/utils
-/server
-/routes
-/controllers
-/models
-/middlewares
+```bash
+# Clone the repository
+https://github.com/admanoj24/Luga-Licious
 
-## 🖼️ Screenshots
+# Navigate to project directory
+cd luga-licious
 
-### 🔐 Login Page
+# Install dependencies
+npm install
 
-![Login Page](/login.png)
+# Run development server
+npm run dev
 
-- Simple and clean user login interface
-- Real-time validation using Formik + Yup
-- Password visibility toggle
-- Error/success messages via toast notifications
+```
 
-### 📝 Register Page
+🙌 Contribution
+Got an idea or found a bug? Contributions are welcome! Please fork this repo and submit a pull request.
 
-![Register Page](/register.png)
+📬 Contact
+Made with ❤️ by Manoj Adhikari
 
-- Intuitive registration form with first name, last name, email, and password fields
-- Form-level and field-level validation
-- Responsive and mobile-friendly design
+📧 Email: admanoj111@gmail.com
