@@ -52,10 +52,10 @@ npm run dev
 
 ```
 
-🙌 Contribution
+🙌 **Contribution**  
 Got an idea or found a bug? Contributions are welcome! Please fork this repo and submit a pull request.
 
-📬 Contact
+📬 **Contact**  
 Made with ❤️ by Manoj Adhikari
 
-📧 Email: admanoj111@gmail.com
+📧 **Email:** admanoj111@gmail.com
