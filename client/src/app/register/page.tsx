@@ -19,6 +19,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import axios from "axios";
+import { toast } from "sonner";
 
 const validationSchema = Yup.object({
   firstName: Yup.string()
@@ -65,17 +66,13 @@ export default function RegisterForm() {
     values: typeof initialValues,
     { setSubmitting }: any
   ) => {
-    try {
-      // Simulate API call
-      console.log("Registration data:", values);
-      axios.post("http://localhost:8080/register", values);
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      alert("Registration successful!");
-    } catch (error) {
-      console.error("Registration failed:", error);
-    } finally {
+    // Simulate API call
+
+    const { data } = await axios.post("http://localhost:8080/register", values);
+    toast(data);
+    setTimeout(() => {
       setSubmitting(false);
-    }
+    }, 1000);
   };
 
   return (
