@@ -3,7 +3,7 @@ import Product from "../models/products.js";
 
 const productRouter = Router();
 
-productRouter.post("/add", async (req, res) => {
+productRouter.post("/product", async (req, res) => {
   const existingProduct = await Product.findOne({ name: req.body.name });
   if (existingProduct) return res.send("Product with this name already exists");
 

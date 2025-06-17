@@ -1,4 +1,4 @@
-import { NavigationMenuDemo } from "@/components/navbar";
+import NavigationMenuDemo from "@/components/navbar";
 import React from "react";
 
 const Navbar = () => {
