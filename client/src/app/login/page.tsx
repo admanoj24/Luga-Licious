@@ -190,6 +190,8 @@ import Image from "next/image";
 import axios from "axios";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
+import { addLoginDetails } from "@/redux/reducerSlices/userSlice";
+import { useDispatch } from "react-redux";
 
 const validationSchema = Yup.object({
   email: Yup.string()
@@ -207,7 +209,7 @@ export default function LoginForm() {
     email: "",
     password: "",
   };
-
+  const dispatch = useDispatch();
   // ✅ Redirect if login is successful
   useEffect(() => {
     if (loginData?.isLoggedIn) {
@@ -224,6 +226,9 @@ export default function LoginForm() {
       const { data } = await axios.post("http://localhost:8080/login", values);
       setLoginData(data);
       toast(data.message);
+      if (data) {
+        dispatch(addLoginDetails(data));
+      }
     } catch (error: any) {
       toast("Login failed. Please try again.");
     } finally {
