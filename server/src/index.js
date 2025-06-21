@@ -10,7 +10,7 @@ connect();
 app.use(cors());
 app.use(express.json());
 app.use(userRouter);
-app.use(productRouter);
+app.use("/api/products", productRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
